@@ -1,0 +1,31 @@
+
+<div id="leagueTable">
+<table class='tb1'>
+<tr> 
+    <th>Positions</th>
+    <th>Logo</th>
+    <th>Name</th>
+    <th>Wins</th>
+    <th>Draw</th>
+    <th>Losses</th>
+    <th>Goal Diff</th>
+    <th>Points</th>
+    <th>Home Goals</th>
+    <th>Away Goals</th>
+</tr>
+<tr *ngFor="let standing of this.standings?.standing">
+    <td><span>{{standing.position}}</span></td>
+    <td><span><img src ="{{standing.crestURI}}" width="50" height = "50"/> </span></td>
+    <td><span>{{standing.teamName}}</span></td>
+    <td><span>{{standing.wins}}</span></td>
+    <td><span>{{standing.draws}}</span></td>
+    <td><span>{{standing.losses}}</span></td>
+    <td><span>{{standing.goalDifference}}</span></td>
+    <td><span>{{standing.points}}</span></td>
+    <td><span>{{standing.home.goals}}</span></td>
+    <td><span>{{standing.away.goals}}</span></td>
+</tr>
+
+</table>
+
+</div>

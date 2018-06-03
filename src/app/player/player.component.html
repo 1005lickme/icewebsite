@@ -1,0 +1,30 @@
+<div id="player">
+<table class ='tb2'>
+<tr>
+<!--<th>Logo</th>-->
+<th>Name</th>
+<th>Position</th>
+<th>Jersey Number</th>
+<th>Date of Birth</th>
+<th>Nationality</th>
+<th>Contract Until</th>
+
+</tr>
+
+<tr *ngFor="let player of players.players">
+
+<!--<td><span><img src="{{standing.crestURL}}" width="50" height = "50"/></span></td>-->
+<td><span>{{player.name}}</span></td>
+<td><span>{{player.position}}</span></td>
+<td><span>{{player.jerseyNumber}}</span></td>
+<td><span>{{player.dateOfBirth}}</span></td>
+<td><span>{{player.nationality}}</span></td>
+<td><span>{{player.contractUntil}}</span></td>
+
+</tr>
+
+</table>
+
+
+
+</div>

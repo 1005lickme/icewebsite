@@ -1,0 +1,24 @@
+<div id="fixture">
+    <table class='tb3'>
+    <tr> 
+        <th>Competition ID</th>
+        <th>Date</th>
+        <th>Match Day</th>
+        <th>Home Team Name</th>
+        <th>Away Team Name</th>
+         
+    </tr>
+    <tr *ngFor="let fixture of this.fixtures?.fixture">
+       
+        <td><span>{{fixture.competitionId}}</span></td>
+        <td><span>{{fixture.date}}</span></td>
+        <td><span>{{fixture.matchday}}</span></td>
+        <td><span>{{fixture.homeTeamName}}</span></td>
+        <td><span>{{fixture.awayTeamName}}</span></td>        
+  
+    </tr>
+    
+    </table>
+
+    </div>
+   
